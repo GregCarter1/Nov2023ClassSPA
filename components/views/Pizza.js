@@ -1,4 +1,6 @@
-<section id="pizza">
+import html from "html-literal";
+
+export default () => html`<section id="pizza">
 <table id="pizzas">
   <tr>
     <th>Crust</th>
@@ -8,4 +10,4 @@
     <th>Customer</th>
   </tr>
 </table>
-</section>
+</section>`;
