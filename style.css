@@ -104,14 +104,14 @@ footer {
     padding: 0.5rem;
     list-style-type: none;
   }
-
-  #bio img {
+}
+#bio img {
     float: left;
     width: 40%;
     height: auto;
     margin-right: 1rem;
   }
-}
+
 
 @media (min-width: 550px) {
   nav > ul {
