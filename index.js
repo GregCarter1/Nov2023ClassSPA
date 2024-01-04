@@ -23,13 +23,13 @@ function afterRender(state) {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
-  // if (state.view === "Home") {
-  //   // Do this stuff
-  //   document.getElementById("callToAction").addEventListener("click", event => {
-  //     event.preventDefault();
+  if (state.view === "Home") {
+    // Do this stuff
+    document.getElementById("callToAction").addEventListener("click", event => {
+      event.preventDefault();
 
-  //     router.navigate("/pizza");
-  //   });
+      router.navigate("/pizza");
+    });
   }
 
   if (state.view === "Order") {
@@ -79,7 +79,6 @@ function afterRender(state) {
     });
   }
 }
-
 router.hooks({
   before: (done, params) => {
     // We need to know what view we are on to know what data to fetch
